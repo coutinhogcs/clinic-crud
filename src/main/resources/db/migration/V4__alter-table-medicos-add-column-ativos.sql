@@ -1,0 +1,3 @@
+ALTER TABLE medicos
+ADD COLUMN ativo SMALLINT DEFAULT 1;
+UPDATE medicos SET ativo = 1;
