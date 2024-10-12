@@ -37,12 +37,16 @@ public class Patient {
         this.adress = new PatientAdress(data.addressPatient());
     }
 
-    public void updateInfo (PatientUpdate data){
-        if(this.email != null){
+    public void updateInfo (PatientUpdate data) {
+        if (this.email != null) {
             this.email = data.email();
         }
-        if(this.telefone != null){
+        if (this.telefone != null) {
             this.telefone = data.telefone();
         }
+    }
+
+    public void delete(){
+        this.ativo = 0;
     }
 }
